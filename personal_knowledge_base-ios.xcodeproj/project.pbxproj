@@ -13,6 +13,7 @@
 		F33066942BC58D1A00F57CA4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F33066932BC58D1A00F57CA4 /* Base */; };
 		F33066962BC58D1C00F57CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33066952BC58D1C00F57CA4 /* Assets.xcassets */; };
 		F33066992BC58D1C00F57CA4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F33066982BC58D1C00F57CA4 /* Base */; };
+		F345FF172BC81DFA00FC8F79 /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = F345FF162BC81DFA00FC8F79 /* Turbo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F345FF172BC81DFA00FC8F79 /* Turbo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "personal_knowledge_base-ios";
+			packageProductDependencies = (
+				F345FF162BC81DFA00FC8F79 /* Turbo */,
+			);
 			productName = "personal_knowledge_base-ios";
 			productReference = F33066892BC58D1A00F57CA4 /* personal_knowledge_base-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = F33066802BC58D1A00F57CA4;
+			packageReferences = (
+				F345FF152BC81DFA00FC8F79 /* XCRemoteSwiftPackageReference "turbo-ios" */,
+			);
 			productRefGroup = F330668A2BC58D1A00F57CA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F345FF152BC81DFA00FC8F79 /* XCRemoteSwiftPackageReference "turbo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/turbo-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F345FF162BC81DFA00FC8F79 /* Turbo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F345FF152BC81DFA00FC8F79 /* XCRemoteSwiftPackageReference "turbo-ios" */;
+			productName = Turbo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F33066812BC58D1A00F57CA4 /* Project object */;
 }
