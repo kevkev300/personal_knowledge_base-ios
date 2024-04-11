@@ -7,6 +7,7 @@
 
 import UIKit
 import Turbo
+import WebKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
@@ -15,7 +16,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     // A session in Turbo native is the object that visits screens, pops them onto the hierachy, adapter that hooks into the JS for Turbo.js,
     private lazy var session: Session = {
-        let session = Session()
+        let configuration = WKWebViewConfiguration()
+        configuration.applicationNameForUserAgent = "Turbo Native iOS"
+        
+        let session = Session(webViewConfiguration: configuration)
         session.delegate = self // `self` == SceneDelegate
         return session
     }()
