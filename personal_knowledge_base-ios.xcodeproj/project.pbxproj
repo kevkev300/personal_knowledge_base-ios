@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F310144E2BC992CA005A8C33 /* WKWebViewConfiguration+App.swift  .swift in Sources */ = {isa = PBXBuildFile; fileRef = F310144D2BC992CA005A8C33 /* WKWebViewConfiguration+App.swift  .swift */; };
+		F31014522BC99C57005A8C33 /* TurboWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31014512BC99C57005A8C33 /* TurboWebViewController.swift */; };
 		F330668D2BC58D1A00F57CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330668C2BC58D1A00F57CA4 /* AppDelegate.swift */; };
 		F330668F2BC58D1A00F57CA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F330668E2BC58D1A00F57CA4 /* SceneDelegate.swift */; };
 		F33066912BC58D1A00F57CA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33066902BC58D1A00F57CA4 /* ViewController.swift */; };
 		F33066942BC58D1A00F57CA4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F33066932BC58D1A00F57CA4 /* Base */; };
 		F33066962BC58D1C00F57CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33066952BC58D1C00F57CA4 /* Assets.xcassets */; };
 		F33066992BC58D1C00F57CA4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F33066982BC58D1C00F57CA4 /* Base */; };
+		F345FF172BC81DFA00FC8F79 /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = F345FF162BC81DFA00FC8F79 /* Turbo */; };
+		F345FF1A2BC9740300FC8F79 /* FormComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F345FF192BC9740300FC8F79 /* FormComponent.swift */; };
+		F345FF1D2BC974B400FC8F79 /* Strada in Frameworks */ = {isa = PBXBuildFile; productRef = F345FF1C2BC974B400FC8F79 /* Strada */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F310144D2BC992CA005A8C33 /* WKWebViewConfiguration+App.swift  .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebViewConfiguration+App.swift  .swift"; sourceTree = "<group>"; };
+		F31014512BC99C57005A8C33 /* TurboWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurboWebViewController.swift; sourceTree = "<group>"; };
 		F33066892BC58D1A00F57CA4 /* personal_knowledge_base-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "personal_knowledge_base-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F330668C2BC58D1A00F57CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F330668E2BC58D1A00F57CA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		F33066952BC58D1C00F57CA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F33066982BC58D1C00F57CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F330669A2BC58D1C00F57CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F345FF192BC9740300FC8F79 /* FormComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F345FF172BC81DFA00FC8F79 /* Turbo in Frameworks */,
+				F345FF1D2BC974B400FC8F79 /* Strada in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +66,7 @@
 		F330668B2BC58D1A00F57CA4 /* personal_knowledge_base-ios */ = {
 			isa = PBXGroup;
 			children = (
+				F345FF182BC973E200FC8F79 /* Components */,
 				F330668C2BC58D1A00F57CA4 /* AppDelegate.swift */,
 				F330668E2BC58D1A00F57CA4 /* SceneDelegate.swift */,
 				F33066902BC58D1A00F57CA4 /* ViewController.swift */,
@@ -63,8 +74,18 @@
 				F33066952BC58D1C00F57CA4 /* Assets.xcassets */,
 				F33066972BC58D1C00F57CA4 /* LaunchScreen.storyboard */,
 				F330669A2BC58D1C00F57CA4 /* Info.plist */,
+				F310144D2BC992CA005A8C33 /* WKWebViewConfiguration+App.swift  .swift */,
+				F31014512BC99C57005A8C33 /* TurboWebViewController.swift */,
 			);
 			path = "personal_knowledge_base-ios";
+			sourceTree = "<group>";
+		};
+		F345FF182BC973E200FC8F79 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F345FF192BC9740300FC8F79 /* FormComponent.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +104,10 @@
 			dependencies = (
 			);
 			name = "personal_knowledge_base-ios";
+			packageProductDependencies = (
+				F345FF162BC81DFA00FC8F79 /* Turbo */,
+				F345FF1C2BC974B400FC8F79 /* Strada */,
+			);
 			productName = "personal_knowledge_base-ios";
 			productReference = F33066892BC58D1A00F57CA4 /* personal_knowledge_base-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +136,10 @@
 				Base,
 			);
 			mainGroup = F33066802BC58D1A00F57CA4;
+			packageReferences = (
+				F345FF152BC81DFA00FC8F79 /* XCRemoteSwiftPackageReference "turbo-ios" */,
+				F345FF1B2BC974B400FC8F79 /* XCRemoteSwiftPackageReference "strada-ios" */,
+			);
 			productRefGroup = F330668A2BC58D1A00F57CA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F31014522BC99C57005A8C33 /* TurboWebViewController.swift in Sources */,
 				F33066912BC58D1A00F57CA4 /* ViewController.swift in Sources */,
+				F345FF1A2BC9740300FC8F79 /* FormComponent.swift in Sources */,
+				F310144E2BC992CA005A8C33 /* WKWebViewConfiguration+App.swift  .swift in Sources */,
 				F330668D2BC58D1A00F57CA4 /* AppDelegate.swift in Sources */,
 				F330668F2BC58D1A00F57CA4 /* SceneDelegate.swift in Sources */,
 			);
@@ -363,6 +395,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F345FF152BC81DFA00FC8F79 /* XCRemoteSwiftPackageReference "turbo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/turbo-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+		F345FF1B2BC974B400FC8F79 /* XCRemoteSwiftPackageReference "strada-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/strada-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F345FF162BC81DFA00FC8F79 /* Turbo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F345FF152BC81DFA00FC8F79 /* XCRemoteSwiftPackageReference "turbo-ios" */;
+			productName = Turbo;
+		};
+		F345FF1C2BC974B400FC8F79 /* Strada */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F345FF1B2BC974B400FC8F79 /* XCRemoteSwiftPackageReference "strada-ios" */;
+			productName = Strada;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F33066812BC58D1A00F57CA4 /* Project object */;
 }
